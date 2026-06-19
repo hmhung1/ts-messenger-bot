@@ -2,7 +2,7 @@ import fs from "fs";
 import type { ClientEventMap } from "meta-messenger.js";
 import path from "path";
 
-import type { Bot } from "@/classes";
+import type { Bot } from "@/core/classes";
 import { importDefault } from "@/utils/import";
 import { logger } from "@/utils/logger";
 
@@ -37,5 +37,5 @@ export default async (client: Bot) => {
         count++;
     }
 
-    logger.debug(`> Loaded ${count} event(s).`);
+    logger.log(`> Loaded ${count} event(s).`);
 };

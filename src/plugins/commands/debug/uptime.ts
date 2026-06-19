@@ -1,4 +1,4 @@
-import { Bot } from "@/classes/Bot";
+import { Bot } from "@/core/classes/Bot";
 
 export default Bot.createCommand({
     name: "uptime",
